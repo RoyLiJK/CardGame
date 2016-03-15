@@ -1,7 +1,10 @@
 #include<iostream>
+#include"Card.h"
 
-main()
+int main()
 {
+	Card A;
+	cout << A.GetRank;
 
-
+	return 0;
 }
