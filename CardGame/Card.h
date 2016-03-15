@@ -12,10 +12,11 @@ private:
 public:
 	Card();
 	Card(string cardrank, string cardsuit);
+	
 	string GetRank();
 	string GetSuit();
-	string SetRank(string rank);
-	string SetSuit(string suit);
+	void SetRank(string rank);
+	void SetSuit(string suit);
 
 
 

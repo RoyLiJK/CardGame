@@ -25,12 +25,12 @@ string Card::GetSuit()
 	return Suit;
 }
 
-string Card::SetRank(string rank)
+void Card::SetRank(string rank)
 {
 	Rank = rank;
 }
 
-string Card::SetSuit(string suit)
+void Card::SetSuit(string suit)
 {
 	Suit = suit;
 }

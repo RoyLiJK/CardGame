@@ -4,7 +4,8 @@
 int main()
 {
 	Card A;
-	cout << A.GetRank;
+	A.SetRank("Ace");
+	cout << A.GetRank() << endl;
 
 	return 0;
 }
