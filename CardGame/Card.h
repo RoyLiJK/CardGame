@@ -6,19 +6,29 @@ using namespace std;
 class Card
 {
 private:
-	string Rank;
-	string Suit;
-
+	int Rank;
+	int Suit;
+	int Value;
 public:
 	Card();
-	Card(string cardrank, string cardsuit);
+	Card(int cardrank, int cardsuit);
 	
-	string GetRank();
-	string GetSuit();
-	void SetRank(string rank);
-	void SetSuit(string suit);
+	int GetRank();
+	int GetSuit();
+	void SetRank(int rank);
+	void SetSuit(int suit);
+	int compareBySuit(const Card& other);
+	int compareByRank(const Card& other);
+	int compareByValue(const Card& other);
+	
+	int CompareTo(const Card& other);
 
-
+	string getSuitAsString();
+	string getRankAsString();
+	void display();
+	
+	// no idea wat this is....
+friend ostream& operator <<(ostream&, Card&);
 
 
 };
