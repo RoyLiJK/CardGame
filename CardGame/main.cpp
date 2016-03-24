@@ -1,15 +1,18 @@
 #include<iostream>
+#include<string>
 #include"Card.h"
+#include"Stack.h"
+using namespace std;
 
 int main()
 {
-	Card A, B;
-	A.SetRank(3);
-	B.SetRank(5);
-	cout << A.GetRank() << endl;
-	cout << B.GetRank() << endl;
-	cout << A.compareByRank(B);
+	Stack s(10);
 
+	for (int i = 0; i < 10; i++)
+	{
+		s.push(new Card(i));
+		s.display();
+	}
 
 	return 0;
 }

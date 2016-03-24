@@ -27,8 +27,6 @@ public:
 	string getRankAsString();
 	void display();
 	
-	// no idea wat this is....
-friend ostream& operator <<(ostream&, Card&);
 
 
 };

@@ -5,7 +5,8 @@ using namespace std;
 
 Card::Card()
 {
-	
+	Rank = -1;
+	Suit = -1;
 }
 
 Card::Card(int CardRank, int CardSuit)
