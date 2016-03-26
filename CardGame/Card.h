@@ -6,11 +6,12 @@ using namespace std;
 class Card
 {
 private:
-	int Rank;
-	int Suit;
-	int Value;
+	int rank;
+	int suit;
+	int value;
 public:
 	Card();
+	Card(int cardrank);
 	Card(int cardrank, int cardsuit);
 	
 	int GetRank();

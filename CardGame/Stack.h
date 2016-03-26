@@ -19,7 +19,7 @@ class Stack
 		bool push(Card* c);
 		Card* pop();
 		Card* peek();
-		string display();
+		void display();
 		bool isFull();
 		bool isEmpty();
 };
