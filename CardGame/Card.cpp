@@ -5,70 +5,75 @@ using namespace std;
 
 Card::Card()
 {
-	Rank = -1;
-	Suit = -1;
+	rank = 0;
+	suit = 0;
+}
+Card::Card(int CardRank)
+{
+	rank = CardRank;
+	suit = CardRank;
 }
 
 Card::Card(int CardRank, int CardSuit)
 {
-	Rank = CardRank;
-	Suit = CardSuit;
+	rank = CardRank;
+	suit = CardSuit;
 }
 
 int Card::GetRank()
 {
-	return Rank;
+	return rank;
 }
 
 int Card::GetSuit()
 {
-	return Suit;
+	return suit;
 }
 
 void Card::SetRank(int rank)
 {
-	Rank = rank;
+	rank = rank;
 }
 
 void Card::SetSuit(int suit)
 {
-	Suit = suit;
+	suit = suit;
 }
 
 int Card::compareBySuit(const Card & other)
 {
-	return Suit - other.Suit;
+	return suit - other.suit;
 }
 
 int Card::compareByRank(const Card& other)
 {
-	return Rank - other.Rank;
+	return rank - other.rank;
 }
 
 int Card::compareByValue(const Card & other)
 {
-	return Value - other.Value;
+	return value - other.value;
 }
 
 int Card::CompareTo(const Card & other)
 {
-	return Rank - other.Rank;
-	return Suit - other.Suit;
+	return rank - other.rank;
+	return suit - other.suit;
 }
 
-string Card::getRankAsString() 
+string Card::getRankAsString()
 {
 	string rankArray[] = { "Ace","Two","Three","Four","Five","Six","Seven","Eight","Nine","Ten","Jack","Queen","King" };
-	return rankArray[Rank];
+	return rankArray[rank % 13];
 }
 
-string Card::getSuitAsString() 
+string Card::getSuitAsString()
 {
 	string suitArray[] = { "Diamonds","Clubs","Hearts","Spades" };
-	return suitArray[Suit];
+	return suitArray[suit % 4];
 }
 
 void Card::display()
 {
-	cout << GetRank() << " of " << GetSuit() << endl;
+	cout << getRankAsString() << " of " << getSuitAsString() << endl;
 }
