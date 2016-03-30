@@ -10,9 +10,9 @@ int main()
 
 	for (int i = 0; i < 10; i++)
 	{
-
+		
 		s.push(new Card(i));
-
+		
 	}
 
 	s.push(new Card(20));

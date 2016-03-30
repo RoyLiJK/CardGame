@@ -61,16 +61,16 @@ int Card::CompareTo(const Card & other)
 	return suit - other.suit;
 }
 
-string Card::getRankAsString()
+string Card::getRankAsString() 
 {
 	string rankArray[] = { "Ace","Two","Three","Four","Five","Six","Seven","Eight","Nine","Ten","Jack","Queen","King" };
-	return rankArray[rank % 13];
+	return rankArray[Rank];
 }
 
-string Card::getSuitAsString()
+string Card::getSuitAsString() 
 {
 	string suitArray[] = { "Diamonds","Clubs","Hearts","Spades" };
-	return suitArray[suit % 4];
+	return suitArray[Suit];
 }
 
 void Card::display()

@@ -7,21 +7,21 @@ using namespace std;
 
 class Stack
 {
-private:
-	Card** stack;
-	int size;
-	int capacity;
+	private:
+		Card** stack;
+		int size;
+		int capacity;
 
-public:
-	Stack();
-	Stack(int cap);
-	int getSize();
-	bool push(Card* c);
-	Card* pop();
-	Card* peek();
-	void display();
-	bool isFull();
-	bool isEmpty();
+	public:
+		Stack();
+		Stack(int cap);
+		int getSize();
+		bool push(Card* c);
+		Card* pop();
+		Card* peek();
+		void display();
+		bool isFull();
+		bool isEmpty();
 };
 
 #endif

@@ -35,14 +35,14 @@ bool Stack::isEmpty()
 
 bool Stack::push(Card * c)
 {
-	if (isFull())
+	if (isFull()) 
 	{
 		cout << "stack is full";
 		return false;
 	}
-	stack[size] = c;
-	size++;
-	return true;
+		stack[size] = c;
+		size++;
+		return true;
 
 }
 
@@ -53,9 +53,9 @@ Card * Stack::pop()
 		cout << "stack is empty";
 		return NULL;
 	}
-	size--;
-	Card* temp = stack[size];
-	return temp;
+		size--;
+		Card* temp = stack[size];
+		return temp;
 }
 
 Card * Stack::peek()
@@ -74,8 +74,9 @@ void Stack::display()
 
 	for (int i = size - 1; i >= 0; i--)
 	{
-
+		
 		stack[i]->display();
-
+		
 	}
 }
+
